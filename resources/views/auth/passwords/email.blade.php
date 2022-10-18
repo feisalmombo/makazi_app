@@ -45,8 +45,14 @@
 						</button>
 						<br>
 						<br>
-						<!-- <button class="btn login_btn" style="border-radius: 90px;">
-						<a href="{{ url('/') }}" style="text-decoration: none; color:white;">Home</a></button> -->
+						
+						{{--  <button class="btn login_btn" style="border-radius: 90px;">
+						<a href="{{ url('/login') }}" style="text-decoration: none; color:white;">Home</a></button>  --}}
+
+						<div class="" style="text-align: center">
+							<a href="{{ route('login') }}" class="ml-2" style="color:#BE2434">Login here</a>
+						</div>
+
 						<div class="d-flex justify-content-center mt-3 login_container">
 					</div>
 					</form>

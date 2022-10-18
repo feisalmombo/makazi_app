@@ -16,7 +16,7 @@
            <div class="panel panel-success">
                 <div class="panel-heading">
                     <h3 class="panel-title">
-                      <h3>All Regions</h3>
+                      <h3>Regions</h3>
                     </h3>
                 </div>
                 <div class="panel-body">
@@ -37,7 +37,7 @@
            <div class="panel panel-warning">
                 <div class="panel-heading">
                     <h3 class="panel-title">
-                      <h3>All Districts</h3>
+                      <h3>Districts</h3>
                     </h3>
                 </div>
                 <div class="panel-body">
@@ -58,7 +58,7 @@
            <div class="panel panel-danger">
                 <div class="panel-heading">
                     <h3 class="panel-title">
-                      <h3>All Wards</h3>
+                      <h3>Wards</h3>
                     </h3>
                 </div>
                 <div class="panel-body">
