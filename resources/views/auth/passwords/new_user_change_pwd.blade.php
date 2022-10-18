@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     
-    <title>Login</title>
+    <title>Makazi App | Change Password</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../temp/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
