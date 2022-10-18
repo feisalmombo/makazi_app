@@ -120,6 +120,10 @@ class RegistrationsController extends Controller
 
         $regions = DB::table("regions")->pluck("region_name","id");
 
+        // dd($this->getRegionsApi());
+        // $regionsApi = $this->getRegionsApi();
+        // dd($regionsApi);
+
         return view('registerNewUsers.registerNewuser')
         ->with('industries', $industry)
         ->with('sexes', $sex)
@@ -128,6 +132,18 @@ class RegistrationsController extends Controller
         ->with('ownershipStatuses', $ownershipStatus)
         ->with('memberships', $membership)
         ->with('regions', $regions);
+    }
+
+    // Using API 
+    public function getRegionsApi()
+    {
+        $regionsApi = new Region();
+          $response = $regionsApi->get('https://tanzania-regions-api.herokuapp.com/regions');
+     
+             $body = $response->getBody()->getContents();
+              $project = json_decode($body);
+
+        return view ('registerNewUsers.registerNewuser', compact($project));
     }
 
     public function getAllDistrictList(Request $request)
