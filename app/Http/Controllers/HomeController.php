@@ -27,6 +27,17 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $regionsCount = DB::select('SELECT COUNT(*) as "regionsCount" FROM regions');
+
+        $districtsCount = DB::select('SELECT COUNT(*) as "districtsCount" FROM districts');
+
+
+        $wardsCount = DB::select('SELECT COUNT(*) as "wardsCount" FROM wards');
+
+
+        return view('home')
+        ->with('regionsCount', $regionsCount)
+        ->with('districtsCount', $districtsCount)
+        ->with('wardsCount', $wardsCount);
     }
 }
