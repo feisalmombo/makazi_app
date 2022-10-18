@@ -24,7 +24,7 @@
                         <div class="col-xs-9 text-left">
                             <div><i class="fa fa-check-circle fa-5x"></i></div>
                         </div>
-                        <div class="huge">{{ $regionsCount[0]->regionsCount }}</div>  
+                        <div class="huge">{{ number_format($regionsCount[0]->regionsCount) }}</div>  
                     </div>
                 </div>
            </div>
@@ -45,7 +45,7 @@
                         <div class="col-xs-9 text-left">
                             <div><i class="fa fa-file fa-5x"></i></div>
                         </div>
-                        <div class="huge">{{ $districtsCount[0]->districtsCount }}</div>
+                        <div class="huge">{{ number_format($districtsCount[0]->districtsCount) }}</div>
                     </div>
                 </div>
            </div>
@@ -66,7 +66,7 @@
                         <div class="col-xs-9 text-left">
                             <div><i class="fa fa-times fa-5x"></i></div>
                         </div>
-                        <div class="huge">{{ $wardsCount[0]->wardsCount }}</div>  
+                        <div class="huge">{{ number_format($wardsCount[0]->wardsCount) }}</div>  
                     </div>
                 </div>
            </div>
