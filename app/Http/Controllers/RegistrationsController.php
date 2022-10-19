@@ -120,10 +120,6 @@ class RegistrationsController extends Controller
 
         $regions = DB::table("regions")->pluck("region_name","id");
 
-        // dd($this->getRegionsApi());
-        // $regionsApi = $this->getRegionsApi();
-        // dd($regionsApi);
-
         return view('registerNewUsers.registerNewuser')
         ->with('industries', $industry)
         ->with('sexes', $sex)
@@ -143,7 +139,7 @@ class RegistrationsController extends Controller
              $body = $response->getBody()->getContents();
               $project = json_decode($body);
 
-        return view ('registerNewUsers.registerNewuser', compact($project));
+        return view ('registerNewUsers.registerNewuser', compact(project)); 
     }
 
     public function getAllDistrictList(Request $request)
